@@ -1,6 +1,6 @@
 # micard
 
-A new Flutter project.
+MiCard is a business card app
 
 ## Getting Started
 
