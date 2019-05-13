@@ -2,6 +2,8 @@
 
 MiCard is a business card app
 
+![alt text](https://github.com/Lincxx/Flutter-MiCard/blob/master/images/micard_preview.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
