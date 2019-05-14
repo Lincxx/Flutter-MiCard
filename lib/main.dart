@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         // ),
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -40,51 +41,42 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'SourceSansPro',
                 ),
               ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(width: 10.0),
-                      Text(
-                        '555 123-4567',
-                        style: TextStyle(
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20.0,
-                          color: Colors.teal,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(color: Colors.teal.shade100),
               ),
               Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      '555 123-4567',
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20.0,
                         color: Colors.teal,
                       ),
-                      SizedBox(width: 10.0),
-                      Text(
-                        'jlincoln@email.com',
-                        style: TextStyle(
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20.0,
-                          color: Colors.teal,
-                        ),
-                      )
-                    ],
+                    ),
+                  )),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'jlincoln@email.com',
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
+                      color: Colors.teal,
+                    ),
                   ),
                 ),
               )
